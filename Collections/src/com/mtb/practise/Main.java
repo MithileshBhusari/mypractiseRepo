@@ -1,6 +1,8 @@
 package com.mtb.practise;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -29,6 +31,11 @@ public class Main {
         System.out.println("Printing Seatcopy  using Collections.shuffle() method");
         printList(seatCopy);
 
+        Theatre.Seat minSeat= Collections.min(seatCopy);
+        Theatre.Seat maxSeat= Collections.max(seatCopy);
+
+        System.out.println("Min Seat Number is : "+minSeat.getSeatNumber());
+        System.out.println("Max Seat Number is : "+maxSeat.getSeatNumber());
     }
 
     public static void printList(List<Theatre.Seat> seatList){
