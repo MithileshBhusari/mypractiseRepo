@@ -1,12 +1,14 @@
 package com.mtb.practise;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Theatre {
 
     private final String theatreName;
-    private List<Seat> seats = new ArrayList<>();
+    private Collection<Seat> seats = new ArrayList<>();
 
 
     public Theatre(String theatreName, int numRows, int seatsPerRows) {
@@ -28,6 +30,7 @@ public class Theatre {
     public boolean reserveSeat(String seatNumber) {
         Seat requestedSeat = null;
         for (Seat seat : seats) {
+            System.out.print(".");
             if (seat.getSeatNumber().equals(seatNumber)) {
                 requestedSeat = seat;
                 break;
