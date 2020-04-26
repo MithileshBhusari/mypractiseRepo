@@ -1,21 +1,22 @@
 package com.mtb.practise;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
         Theatre theatre=new Theatre("Sudama",8,12);
-     //   theatre.getSeats();
 
-        if(theatre.reserveSeat("H10")){
-            System.out.println("Please pay");
-        }else {
-            System.out.println("Sorry, seat is taken");
-        }
+        List<Theatre.Seat> seatCopy=new ArrayList<>(theatre.seats);
+        printList(seatCopy);
+    }
 
-        if(theatre.reserveSeat("H10")){
-            System.out.println("Please pay");
-        }else {
-            System.out.println("Sorry, seat is taken");
+    public static void printList(List<Theatre.Seat> seatList){
+        for(Theatre.Seat seat:seatList){
+            System.out.print(" "+seat.getSeatNumber());
         }
+        System.out.println();
+        System.out.println("===========================================================================");
     }
 }
