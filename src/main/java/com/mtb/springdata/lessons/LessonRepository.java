@@ -1,4 +1,4 @@
-package com.mtb.springdata.lessons.course;
+package com.mtb.springdata.lessons;
 
 import org.springframework.data.repository.CrudRepository;
 
@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface LessonRepository extends CrudRepository<Lesson,String> {
 
-    public List<Lesson> findByTopicId(String topicId);
+    public List<Lesson> findByCourseId(String courseId);
     //getAllTopics()
     //getTopic(String id)
     //updateTopic(Topic t)

@@ -1,4 +1,4 @@
-package com.mtb.springdata.lessons.course;
+package com.mtb.springdata.lessons;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ public class LessonService {
 
     public List<Lesson> getAllLessons(String courseId) {
         List<Lesson> lessons = new ArrayList<>();
-        lessonRepository.findByTopicId(courseId).forEach(lessons::add);
+        lessonRepository.findByCourseId(courseId).forEach(lessons::add);
         return lessons;
     }
 

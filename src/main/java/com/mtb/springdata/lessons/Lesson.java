@@ -1,4 +1,4 @@
-package com.mtb.springdata.lessons.course;
+package com.mtb.springdata.lessons;
 
 import com.mtb.springdata.course.Course;
 import com.mtb.springdata.topics.Topic;
