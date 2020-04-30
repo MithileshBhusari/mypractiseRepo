@@ -14,6 +14,7 @@ public class Course {
     private String name;
     private String description;
 
+
     @ManyToOne
     private Topic topic;
 
@@ -51,7 +52,13 @@ public class Course {
         this.description = description;
     }
 
-    public void setTopic(Topic topic) {
-        this.topic=topic;
+    public Topic getTopic() {
+        return topic;
     }
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
+    }
+
+
 }
