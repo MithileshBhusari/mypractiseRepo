@@ -14,7 +14,7 @@ public class HelloWorldController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value={ "/userCreation","/register"})
+    @RequestMapping(value={ "/userCreation","/register","/"})
     public String mainPage() {
         System.out.println("This is the main Page");
         return "register.html";
@@ -37,7 +37,7 @@ public class HelloWorldController {
         return "welcome";
     }
 
-    @RequestMapping(value = "/signInUser",
+    @RequestMapping(value = "/signin",
             method = RequestMethod.POST)
     public String signInUser(final User user, Model model) {
         if(userService.validateUser(user.getUsername(),user.getPassword()) ){
