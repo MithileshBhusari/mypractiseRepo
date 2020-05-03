@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,23 +33,21 @@ public class LoginController {
 
     @RequestMapping(value = "/signin",
             method = RequestMethod.POST)
-    public String signInUser(final User user, Model model, HttpServletRequest httpServletRequest) {
+    public String signInUser(final User user, Model model, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         if (userService.validateUser(user.getUsername(), user.getPassword())) {
             System.out.println(" signInUser username: " + user.getUsername());
             model.addAttribute("username", user.getUsername());
-
-          //  List<String> usernameList = (List<String>) httpServletRequest.getSession().getAttribute("USERNAME_LIST");
-        String username =(String)    httpServletRequest.getSession().getAttribute("USERNAME");
+            String username = (String) httpServletRequest.getSession().getAttribute("USERNAME");
 
             if (username == null) {
-                //usernameL = new ArrayList<>();
-                //username.add(user.getUsername());
-                //httpServletRequest.getSession().setAttribute("USERNAME_LIST", usernameList);
                 httpServletRequest.getSession().setAttribute("USERNAME", user.getUsername());
             }
-            //usernameList.add(user.getUsername());
-            //httpServletRequest.getSession().setAttribute("USERNAME_LIST", usernameList);
             httpServletRequest.getSession().setAttribute("USERNAME", user.getUsername());
+
+            httpServletResponse.setHeader("Cache-Control", "no-cache");
+            httpServletResponse.setHeader("Cache-Control", "no-store");
+            httpServletResponse.setHeader("Pragma", "no-cache");
+            httpServletResponse.setDateHeader("Expires", 0);
             return "welcome";
         } else {
             System.out.println("Invalid Credentials");
@@ -61,11 +62,11 @@ public class LoginController {
         return "homepage";
     }
 
-    @PostMapping("/invalidate/session")
-    public String destroySession(HttpServletRequest request) {
-        //invalidate the session , this will clear the data from configured database (Mysql/redis/hazelcast)
+    @GetMapping({"/invalidate/session", "logout_page"})
+    public String destroySession(HttpServletRequest request, HttpServletResponse httpServletResponse) {
         System.out.println("Destroying Session");
+        System.out.println("Keep-Alive : " + httpServletResponse.getHeader("Keep-Alive"));
         request.getSession().invalidate();
-        return "homepage";
+        return "logout";
     }
 }

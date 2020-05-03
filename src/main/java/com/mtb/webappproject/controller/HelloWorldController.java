@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
@@ -16,7 +17,7 @@ public class HelloWorldController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value={ "/userCreation","/register"})
+    @RequestMapping(value = {"/userCreation", "/register"})
     public String mainPage() {
         System.out.println("This is the main Page");
         return "register.html";
@@ -24,7 +25,7 @@ public class HelloWorldController {
 
     @RequestMapping(value = "/registerUser",
             method = RequestMethod.POST)
-    public String registerUser(final User user, Model model) {
+    public String registerUser(final User user, Model model, HttpServletResponse httpServletResponse) {
         System.out.println("Email: " + user.getEmail());
         model.addAttribute("email", user.getEmail());
         return "welcome";
@@ -38,6 +39,7 @@ public class HelloWorldController {
         return userService.getUsersList();
         //return "welcome";
     }
+
     @RequestMapping(value = "/showUsers",
             method = RequestMethod.GET)
     public List<User> getUsers(final User user, Model model) {
@@ -45,19 +47,5 @@ public class HelloWorldController {
         return userService.getUsersList();
         //return "welcome";
     }
-/*
-    @RequestMapping(value = "/signin",
-            method = RequestMethod.POST)
-    public String signInUser(final User user, Model model) {
-        if(userService.validateUser(user.getUsername(),user.getPassword()) ){
-            System.out.println("username: " + user.getUsername());
-            model.addAttribute("username", user.getUsername());
-            return "welcome";
-        }else{
-            System.out.println("Invalid Credentials");
-            return "register.html";
-        }
-    }*/
-
 
 }

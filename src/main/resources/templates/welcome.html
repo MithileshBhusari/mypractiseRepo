@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+    <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Welcome Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -9,9 +9,9 @@
 <p th:text="'Hello, ' + ${session.USERNAME} + '!'" />
 
 
-<form action="#" th:action="@{/invalidate/session}" th:object="${user}" method="post">
-
-    <button name="showUsers" type="submit" value="logout">Logout</button>
+<!--<form action="#" th:action="@{/invalidate/session}" th:object="${user}" method="post">
+    <button name="showUsers" type="submit" value="logout">Logout</button>-->
+<a href="logout_page">Logout</a>
 </form>
 </body>
 </html>
