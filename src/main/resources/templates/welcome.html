@@ -1,10 +1,17 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>Welcome Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'Hello, ' + ${username} + '!'" />
+<h1>WELCOME PAGE</h1>
+<p th:text="'Hello, ' + ${session.USERNAME} + '!'" />
+
+
+<form action="#" th:action="@{/invalidate/session}" th:object="${user}" method="post">
+
+    <button name="showUsers" type="submit" value="logout">Logout</button>
+</form>
 </body>
 </html>

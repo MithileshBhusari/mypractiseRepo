@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Logout Successfully</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="#" th:action="@{/invalidate/session}" th:object="${user}" method="get">
+
+<h1>Logout successfully</h1>
+<a href="signin.html"></a>
+</body>
+</html>
