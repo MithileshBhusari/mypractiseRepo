@@ -1,5 +1,6 @@
 package com.mtb.webappproject.controller;
 
+import com.mtb.webappproject.constants.Constants;
 import com.mtb.webappproject.model.User;
 import com.mtb.webappproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class HelloWorldController {
     @RequestMapping(value = {"/userCreation", "/register"})
     public String mainPage() {
         System.out.println("This is the main Page");
-        return "register.html";
+        return Constants.REGISTER;
     }
 
     @RequestMapping(value = "/registerUser",
@@ -28,7 +29,7 @@ public class HelloWorldController {
     public String registerUser(final User user, Model model, HttpServletResponse httpServletResponse) {
         System.out.println("Email: " + user.getEmail());
         model.addAttribute("email", user.getEmail());
-        return "welcome";
+        return Constants.WELCOME;
     }
 
 
@@ -45,7 +46,7 @@ public class HelloWorldController {
     public List<User> getUsers(final User user, Model model) {
 
         return userService.getUsersList();
-        //return "welcome";
+
     }
 
 }

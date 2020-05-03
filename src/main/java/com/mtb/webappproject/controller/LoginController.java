@@ -18,6 +18,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.mtb.webappproject.constants.Constants.*;
+
 @Controller
 public class LoginController {
 
@@ -27,7 +29,7 @@ public class LoginController {
     @RequestMapping(value = "/signin")
     public String signup() {
         System.out.println("signup: This is the signin Page");
-        return "signin";
+        return SIGNIN;
     }
 
 
@@ -48,10 +50,10 @@ public class LoginController {
             httpServletResponse.setHeader("Cache-Control", "no-store");
             httpServletResponse.setHeader("Pragma", "no-cache");
             httpServletResponse.setDateHeader("Expires", 0);
-            return "welcome";
+            return WELCOME;
         } else {
             System.out.println("Invalid Credentials");
-            return "homepage";
+            return HOMEPAGE;
         }
     }
 
@@ -59,7 +61,7 @@ public class LoginController {
     public String home(Model model, HttpSession session) {
         List<String> usernameList = (List<String>) session.getAttribute("USERNAME_LIST");
         model.addAttribute("USERNAME_LIST", usernameList != null ? usernameList : new ArrayList<>());
-        return "homepage";
+        return HOMEPAGE;
     }
 
     @GetMapping({"/invalidate/session", "logout_page"})
@@ -67,6 +69,6 @@ public class LoginController {
         System.out.println("Destroying Session");
         System.out.println("Keep-Alive : " + httpServletResponse.getHeader("Keep-Alive"));
         request.getSession().invalidate();
-        return "logout";
+        return LOGOUT;
     }
 }
