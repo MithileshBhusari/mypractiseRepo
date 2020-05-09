@@ -1,6 +1,5 @@
 package com.mtb.springboot.mybatisex.springbootmybatis.resouce;
 
-import com.mtb.springboot.mybatisex.springbootmybatis.mappers.UsersMapper;
 import com.mtb.springboot.mybatisex.springbootmybatis.model.Users;
 import com.mtb.springboot.mybatisex.springbootmybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +11,9 @@ import java.util.List;
 @RequestMapping("/rest/users")
 public class UserResource {
 
-    private UsersMapper usersMapper;
 
     @Autowired
     private UserService userService;
-
-    public UserResource(UsersMapper usersMapper) {
-        this.usersMapper = usersMapper;
-    }
 
     @GetMapping("/getAllUsers")
     public List<Users> getAllUsers() {
@@ -32,9 +26,8 @@ public class UserResource {
     }
 
     @PostMapping("/addUser")
-    private List<Users> addUser(@RequestBody Users user) {
+    private void addUser(@RequestBody Users user) {
         userService.addUser(user);
-        return usersMapper.findAll();
     }
 
     @DeleteMapping("/{name}")
