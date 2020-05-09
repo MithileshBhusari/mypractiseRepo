@@ -1,10 +1,7 @@
 package com.mtb.springboot.mybatisex.springbootmybatis.mappers;
 
 import com.mtb.springboot.mybatisex.springbootmybatis.model.Users;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -24,4 +21,10 @@ public interface UsersMapper {
     @SelectKey(statement = "select LAST_INSERT_ROWID()",keyProperty = "id",
     before = false,resultType = Integer.class )
     void insert(Users users);
+
+    @Delete("Delete from users where name = #{name}")
+   public void deleteByName(String name);
+
+    @Select("select * from users where name = #{name}")
+    Users findUser(String name);
 }
