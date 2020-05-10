@@ -1,5 +1,6 @@
 package com.mtb.springboot.mybatisex.springbootmybatis.resouce;
 
+import com.mtb.springboot.mybatisex.springbootmybatis.mappers.UsersMapper;
 import com.mtb.springboot.mybatisex.springbootmybatis.model.Users;
 import com.mtb.springboot.mybatisex.springbootmybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
