@@ -14,16 +14,16 @@ public class CustomerService {
     @Autowired
     private CustomerMapper customerMapper;
 
-    public List<Customer> findAll() {
-        return customerMapper.findAll();
+    public List<Customer> getAll() {
+        return customerMapper.getAll();
     }
 
 
-    public Customer findCustomer(String name) {
-        return customerMapper.findCustomer(name);
+    public Customer getCustomer(String name) {
+        return customerMapper.getCustomer(name);
     }
 
-    public List<Address> findAddressByCustomer(String customerAddress){
+    public List<Address> getCustomerAddresses(String customerAddress){
         return  customerMapper.findAddressesByCustomer(customerAddress);
     }
 

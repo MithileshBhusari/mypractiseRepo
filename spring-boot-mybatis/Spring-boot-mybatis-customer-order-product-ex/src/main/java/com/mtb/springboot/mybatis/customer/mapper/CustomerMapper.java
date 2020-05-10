@@ -10,24 +10,24 @@ import java.util.List;
 public interface CustomerMapper {
 
     @Select("select * from customers")
-    List<Customer> findAll();
+    List<Customer> getAll();
 
     @Select("select * from customers where name = #{name}")
     @Results(value={
             @Result(property = "name",column = "name"),
-            @Result(property = "addresses", javaType = List.class,column = "city",
-            many = @Many(select = "findAddressByCustomer"))
+            @Result(property = "addresses", javaType = List.class,column = "customerId",
+            many = @Many(select = "findAddressesByCustomer"))
     })
-    Customer findCustomer(String name);
+    Customer getCustomer(String name);
 
-    @Select("Select * from address where customer_Address=#{customerAddress}")
+    @Select("Select * from address where customerId=#{customerId}")
     @Results(value ={
             @Result(property = "city",column = "city"),
             @Result(property = "country",column = "country"),
             @Result(property = "streetNr",column = "streetNr"),
             @Result(property = "plotno" ,column = "plotno")
     })
-    List<Address> findAddressesByCustomer(String customerAddress);
+    List<Address> findAddressesByCustomer(String customerId);
     @Insert("INSERT INTO customers (\n" +
             //"                     id,\n" +
             "                     name\n" +

@@ -17,13 +17,13 @@ public class CustomerResource {
 
 
     @GetMapping("/getAllCustomers")
-    public List<Customer> getAllCustomers() {
-        return customerService.findAll();
+    public List<Customer> getCustomerAddresses() {
+        return customerService.getAll();
     }
 
     @GetMapping("getCustomer/{name}")
     public Customer getCustomer(@PathVariable String name) {
-        return customerService.findCustomer(name);
+        return customerService.getCustomer(name);
     }
 
     @PostMapping("/addCustomer")
@@ -38,8 +38,8 @@ public class CustomerResource {
 
 
     @GetMapping("/{customerId}/getAddresses")
-    public List<Address> getAllCustomers(@PathVariable String customerId) {
-        return customerService.findAddressByCustomer(customerId);
+    public List<Address> getCustomerAddresses(@PathVariable String customerId) {
+        return customerService.getCustomerAddresses(customerId);
     }
 
 

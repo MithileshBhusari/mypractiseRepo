@@ -1,19 +1,15 @@
 package com.mtb.springboot.mybatis.customer.model;
 
+import org.apache.ibatis.annotations.Many;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 public class Customer {
 
     private int customerId;
     private String name;
-
     private List<Address> addresses;
-
-    public Customer(int customerId, String name, List<Address> address) {
-        this.customerId = customerId;
-        this.name = name;
-        this.addresses = address;
-    }
 
     public int getCustomerId() {
         return customerId;
