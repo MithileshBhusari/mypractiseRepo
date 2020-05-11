@@ -1,4 +1,4 @@
-package com.mtb.springboot.mybatis.customer;
+package com.mtb.springboot.mybatis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

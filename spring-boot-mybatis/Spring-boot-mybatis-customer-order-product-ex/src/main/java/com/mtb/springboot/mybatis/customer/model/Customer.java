@@ -1,7 +1,6 @@
 package com.mtb.springboot.mybatis.customer.model;
 
-import org.apache.ibatis.annotations.Many;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.mtb.springboot.mybatis.orders.model.PurchaseOrder;
 
 import java.util.List;
 
@@ -10,7 +9,15 @@ public class Customer {
     private int customerId;
     private String name;
     private List<Address> addresses;
+    private List<PurchaseOrder> purchaseOrderList;
 
+    public List<PurchaseOrder> getPurchaseOrderList() {
+        return purchaseOrderList;
+    }
+
+    public void setPurchaseOrderList(List<PurchaseOrder> purchaseOrderList) {
+        this.purchaseOrderList = purchaseOrderList;
+    }
     public int getCustomerId() {
         return customerId;
     }
