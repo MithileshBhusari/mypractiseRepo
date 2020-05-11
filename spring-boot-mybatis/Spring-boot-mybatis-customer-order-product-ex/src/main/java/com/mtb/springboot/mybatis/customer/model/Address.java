@@ -2,6 +2,7 @@ package com.mtb.springboot.mybatis.customer.model;
 
 public class Address {
 
+    private int addressId;
     private String  city;
     private String country;
     private String streetNr;
@@ -9,8 +10,11 @@ public class Address {
 
 
     private String customerId;
+public Address(){
 
-    public Address(String city, String country, String streetNr,String customerId) {
+}
+   public Address(String plotno,String city, String country, String streetNr,String customerId) {
+        this.plotno=plotno;
         this.city = city;
         this.country = country;
         this.streetNr = streetNr;
@@ -57,4 +61,12 @@ public class Address {
         this.plotno = plotno;
     }
 
+
+    public int getAddressId() {
+        return addressId;
+    }
+
+    public void setAddressId(int addressId) {
+        this.addressId = addressId;
+    }
 }

@@ -17,19 +17,25 @@ public class CustomerResource {
 
 
     @GetMapping("/getAllCustomers")
-    public List<Customer> getCustomerAddresses() {
-        return customerService.getAll();
+    public List<Customer> getAllCustomers() {
+        return customerService.getAllCustomers();
     }
 
-    @GetMapping("getCustomer/{name}")
-    public Customer getCustomer(@PathVariable String name) {
-        return customerService.getCustomer(name);
+    @GetMapping("getCustomer/{customerId}")
+    public Customer getCustomer(@PathVariable int customerId) {
+        return customerService.getCustomer(customerId);
     }
 
     @PostMapping("/addCustomer")
-    private void addUser(@RequestBody Customer customer) {
+    private void addCustomer(@RequestBody Customer customer) {
         customerService.addCustomer(customer);
     }
+
+    @PostMapping("/{customerId}/addCustomerAddress")
+    private void addCustomerAddress(@RequestBody Address address,@PathVariable int customerId) {
+        customerService.addCustomerAddress(address,customerId);
+    }
+
 
     @DeleteMapping("/{name}")
     private void deleteUser(@PathVariable String name) {
@@ -38,7 +44,7 @@ public class CustomerResource {
 
 
     @GetMapping("/{customerId}/getAddresses")
-    public List<Address> getCustomerAddresses(@PathVariable String customerId) {
+    public List<Address> getAllCustomers(@PathVariable String customerId) {
         return customerService.getCustomerAddresses(customerId);
     }
 
