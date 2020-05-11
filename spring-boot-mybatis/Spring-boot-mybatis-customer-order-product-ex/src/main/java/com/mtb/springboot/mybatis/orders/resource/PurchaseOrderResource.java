@@ -9,6 +9,7 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/customers/{customerId}/orders")
 public class PurchaseOrderResource {
 
 
@@ -16,23 +17,23 @@ public class PurchaseOrderResource {
     private PurchaseOrderService purchaseOrderService;
 
 
-    @GetMapping("/customers/{customerId}/orders/getAllOrders")
+    @GetMapping("/getAllOrders")
     public List<PurchaseOrder> getAllPurchaseOrders(@PathVariable int customerId) {
         return purchaseOrderService.getAllPurchaseOrders(customerId);
     }
 
 
-    @GetMapping("customers/{customerId}/orders/{id}")
+    @GetMapping("/{id}")
     public PurchaseOrder getPurchaseOrder(@PathVariable int id,@PathVariable int customerId) {
         return purchaseOrderService.getOrder(id,customerId);
     }
 
-    @PostMapping("/customers/{customerId}/orders/addOrder")
+    @PostMapping("/addOrder")
     private void addOrder(@RequestBody PurchaseOrder order,@PathVariable int customerId) {
         purchaseOrderService.addOrder(order,customerId);
     }
 
-    @DeleteMapping("/customers/{customerId}/orders/{id}")
+    @DeleteMapping("/{id}")
     private void deleteOrder(@PathVariable int id,@PathVariable int customerId) {
         purchaseOrderService.deleteOrder(id,customerId);
     }

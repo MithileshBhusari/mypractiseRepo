@@ -1,7 +1,6 @@
 package com.mtb.springboot.mybatis.orders.mapper;
 
 import com.mtb.springboot.mybatis.orders.model.PurchaseOrder;
-import com.mtb.springboot.mybatis.products.model.Product;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

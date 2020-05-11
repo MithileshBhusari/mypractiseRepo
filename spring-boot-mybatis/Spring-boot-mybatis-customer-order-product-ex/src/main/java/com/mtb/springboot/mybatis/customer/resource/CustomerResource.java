@@ -9,40 +9,41 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/customers")
 public class CustomerResource {
 
     @Autowired
     private CustomerService customerService;
 
 
-    @GetMapping("/customers/getAllCustomers")
+    @GetMapping("/getAllCustomers")
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
 
-    @GetMapping("/customers/getCustomer/{customerId}")
+    @GetMapping("/getCustomer/{customerId}")
     public Customer getCustomer(@PathVariable int customerId) {
         return customerService.getCustomer(customerId);
     }
 
-    @PostMapping("/customers/addCustomer")
+    @PostMapping("/addCustomer")
     private void addCustomer(@RequestBody Customer customer) {
         customerService.addCustomer(customer);
     }
 
-    @PostMapping("/customers/{customerId}/addCustomerAddress")
+    @PostMapping("/{customerId}/addCustomerAddress")
     private void addCustomerAddress(@RequestBody Address address,@PathVariable int customerId) {
         customerService.addCustomerAddress(address,customerId);
     }
 
 
-    @DeleteMapping("/customers/{name}")
+    @DeleteMapping("/{name}")
     private void deleteUser(@PathVariable String name) {
         customerService.deleteUser(name);
     }
 
 
-    @GetMapping("/customers/{customerId}/getAddresses")
+    @GetMapping("/{customerId}/getAddresses")
     public List<Address> getAllCustomers(@PathVariable String customerId) {
         return customerService.getCustomerAddresses(customerId);
     }
