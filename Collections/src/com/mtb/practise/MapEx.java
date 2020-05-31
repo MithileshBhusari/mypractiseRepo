@@ -30,12 +30,22 @@ public class MapEx {
 
         System.out.println("======================================================");
 
-        languages.remove("Lisp");
-        if(languages.remove("Algol","a family of algorithmic language")){
+//        languages.remove("Lisp");
+        if(languages.remove("Algol","An algorithmic  language")){
             System.out.println("Algol removed");
         }else{
             System.out.println("Algol not removed,key/value pair not found");
         }
+
+   //     System.out.println(languages.replace("Lisp","a functional programming language with imperative features."));
+        System.out.println(languages.replace("Scala","this will not be added"));
+
+        if(languages.replace("Lisp","This will not replace","a functional programming language with imperative features.")){
+            System.out.println("Lisp was replaced");
+        }else{
+            System.out.println("Lisp was not replaced");
+        }
+
         for (String key:languages.keySet()) {
             System.out.println(key+" : "+languages.get(key));
         }
