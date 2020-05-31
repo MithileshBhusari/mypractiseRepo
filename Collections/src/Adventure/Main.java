@@ -9,6 +9,15 @@ public class Main {
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
     public static void main(String[] args) {
+
+        /*Change the program to allow players to type full words,or phrases then move to the
+        * current location based upon their input.
+        * The player should be able to type commands such as "Go West", "run South" of just "East"
+        * and the program will move to the appropriate location if there is one. As at present,
+        * an attempt to move in an invalid direction should print a message and remain in the same place.
+        *
+        * Single letter commands (N,S,E,W,Q)  should still be available.*/
+
         Scanner scanner = new Scanner(System.in);
 
         locations.put(0, new Location(0, "You are sitting in front of computer learning java"));
@@ -33,8 +42,15 @@ public class Main {
 
         locations.get(5).addExit("W", 2);
         locations.get(5).addExit("S", 1);
+
+        Map<String,String> vocabulary=new HashMap<>();
+        vocabulary.put("QUIT","Q");
+        vocabulary.put("EAST","E");
+        vocabulary.put("NORTH","N");
+        vocabulary.put("WEST","W");
+        vocabulary.put("SOUTH","S");
         int loc = 1;
-        /*    while (true) {
+        while (true) {
                 System.out.println(locations.get(loc).getDescription());
                 if (loc == 0) {
                     break;
@@ -48,23 +64,20 @@ public class Main {
                 System.out.println();
 
                 String direction = scanner.nextLine().toUpperCase();
+                if(direction.length()>1){
+                    String[] words=direction.split(" ");
+                    for (String word:words){
+                        if(vocabulary.containsKey(word)){
+                            direction=vocabulary.get(word);
+                            break;
+                        }
+                    }
+                }
                 if (exits.containsKey(direction)) {
                     loc = exits.get(direction);
                 } else {
                     System.out.println("You can not go in that direction");
                 }
-            }*/
-
-        String[] road="You are standing at the end of a road before a small brick building".split(" ");
-        for (String i:road) {
-            System.out.println(i);
-        }
-
-        System.out.println("=============================================================");
-
-        String[] building="You are inside a building, a well house for small spring".split(", ");
-        for(String i:building){
-            System.out.println(i);
-        }
+            }
     }
 }
