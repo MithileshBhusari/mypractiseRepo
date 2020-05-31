@@ -34,25 +34,37 @@ public class Main {
         locations.get(5).addExit("W", 2);
         locations.get(5).addExit("S", 1);
         int loc = 1;
-        while (true) {
-            System.out.println(locations.get(loc).getDescription());
-            if (loc == 0) {
-                break;
-            }
+        /*    while (true) {
+                System.out.println(locations.get(loc).getDescription());
+                if (loc == 0) {
+                    break;
+                }
 
-            Map<String, Integer> exits = locations.get(loc).getExits();
-            System.out.print("Available exits are:");
-            for (String exit : exits.keySet()) {
-                System.out.print(exit + ", ");
-            }
-            System.out.println();
+                Map<String, Integer> exits = locations.get(loc).getExits();
+                System.out.print("Available exits are:");
+                for (String exit : exits.keySet()) {
+                    System.out.print(exit + ", ");
+                }
+                System.out.println();
 
-            String direction = scanner.nextLine().toUpperCase();
-            if (exits.containsKey(direction)) {
-                loc = exits.get(direction);
-            } else {
-                System.out.println("You can not go in that direction");
-            }
+                String direction = scanner.nextLine().toUpperCase();
+                if (exits.containsKey(direction)) {
+                    loc = exits.get(direction);
+                } else {
+                    System.out.println("You can not go in that direction");
+                }
+            }*/
+
+        String[] road="You are standing at the end of a road before a small brick building".split(" ");
+        for (String i:road) {
+            System.out.println(i);
+        }
+
+        System.out.println("=============================================================");
+
+        String[] building="You are inside a building, a well house for small spring".split(", ");
+        for(String i:building){
+            System.out.println(i);
         }
     }
 }
