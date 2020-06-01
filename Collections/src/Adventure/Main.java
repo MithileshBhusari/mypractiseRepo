@@ -21,7 +21,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Map<String,Integer> tempExits=new HashMap<String,Integer>();
-        locations.put(0, new Location(0, "You are sitting in front of computer learning java",tempExits));
+        locations.put(0, new Location(0, "You are sitting in front of computer learning java",null));
 
         tempExits=new HashMap<String,Integer>();
         tempExits.put("W",2);
@@ -56,6 +56,7 @@ public class Main {
         int loc = 1;
         while (true) {
                 System.out.println(locations.get(loc).getDescription());
+                tempExits.remove("S");
                 if (loc == 0) {
                     break;
                 }
