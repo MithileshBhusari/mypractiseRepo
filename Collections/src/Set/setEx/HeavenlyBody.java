@@ -17,7 +17,7 @@ public final class HeavenlyBody {
     public HeavenlyBody(String name, double orbitalPeriod) {
         this.name = name;
         this.orbitalPeriod = orbitalPeriod;
-        this.satellites=new HashSet<>();
+        this.satellites = new HashSet<>();
     }
 
     public String getName() {
@@ -28,11 +28,25 @@ public final class HeavenlyBody {
         return orbitalPeriod;
     }
 
-    public boolean addMoon(HeavenlyBody moon){
-        return  this.satellites.add(moon);
+    public boolean addMoon(HeavenlyBody moon) {
+        return this.satellites.add(moon);
     }
 
-    public Set<HeavenlyBody> getSatellites(){
-        return  new HashSet<>(this.satellites);
+    public Set<HeavenlyBody> getSatellites() {
+        return new HashSet<>(this.satellites);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        System.out.println("obj.getClass() is : " + obj.getClass());
+        System.out.println("this.getClass() is : " + this.getClass());
+        if (obj == null || (obj.getClass() != this.getClass())) {
+            return false;
+        }
+        String objName = ((HeavenlyBody) obj).getName();
+        return this.name.equals(objName);
     }
 }
