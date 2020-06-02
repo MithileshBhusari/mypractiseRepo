@@ -1,4 +1,4 @@
-package com.mtb.practise;
+package map.practise;
 
 import java.util.*;
 

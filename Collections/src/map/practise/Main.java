@@ -1,11 +1,11 @@
-package com.mtb.practise;
+package map.practise;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
+/**
+*@author MithileshB
+*/
 public class Main {
 
     public static void main(String[] args) {

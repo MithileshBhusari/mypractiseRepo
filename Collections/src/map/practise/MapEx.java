@@ -1,4 +1,4 @@
-package com.mtb.practise;
+package map.practise;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class MapEx {
    //     System.out.println(languages.replace("Lisp","a functional programming language with imperative features."));
         System.out.println(languages.replace("Scala","this will not be added"));
 
-        if(languages.replace("Lisp","This will not replace","a functional programming language with imperative features.")){
+        if(languages.replace("Lisp","Therein lies madness","a functional programming language with imperative features.")){
             System.out.println("Lisp was replaced");
         }else{
             System.out.println("Lisp was not replaced");
