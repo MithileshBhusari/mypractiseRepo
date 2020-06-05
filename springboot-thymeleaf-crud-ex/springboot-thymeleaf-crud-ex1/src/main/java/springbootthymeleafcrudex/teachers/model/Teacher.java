@@ -1,11 +1,12 @@
-package com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.model;
+package com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.teachers.model;
+
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity //To make student as JPA Entity
-@Table(name = "students") //To create table with name
-public class Student {
+@Table(name = "teachers") //To create table with name
+public class Teacher {
 
 
     @Id //To make it primary key
@@ -23,7 +24,7 @@ public class Student {
     @Column(name = "phone_no")
     private long phoneNo;
 
-    public Student(){
+    public Teacher(){
 
     }
 
@@ -59,4 +60,3 @@ public class Student {
         this.phoneNo = phoneNo;
     }
 }
-

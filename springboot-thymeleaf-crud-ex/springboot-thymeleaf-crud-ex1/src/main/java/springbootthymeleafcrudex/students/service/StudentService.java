@@ -1,7 +1,7 @@
-package com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.service;
+package com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.students.service;
 
-import com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.model.Student;
-import com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.repository.StudentRepository;
+import com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.students.model.Student;
+import com.mtb.springboot.thymeleaf.crud.ex.springbootthymeleafcrudex.students.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
