@@ -3,6 +3,7 @@ package com.mtb.paginationsorting.ems.service;
 import com.mtb.paginationsorting.ems.model.Employee;
 import com.mtb.paginationsorting.ems.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.swing.text.html.Option;
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.Optional;
  * @created 05/06/2020 - 10:01 AM
  * @project springboot-thymeleaf-crud-ex
  */
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
