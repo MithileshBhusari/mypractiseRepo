@@ -1,7 +1,6 @@
 package Set.setEx;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -9,16 +8,25 @@ import java.util.Set;
  * @created 01/06/2020 - 10:14 AM
  * @project mypractiseRepo
  */
-public final class HeavenlyBody {
+public class HeavenlyBody {
 
     private final String name;
     private final double orbitalPeriod;
     private final Set<HeavenlyBody> satellites;
-
-    public HeavenlyBody(String name, double orbitalPeriod) {
+    private final BodyTypes bodyTypes;
+    public enum BodyTypes{
+        STAR,
+        PLANET,
+        DWARF_PLANET,
+        MOON,
+        COMET,
+        ASTERIOD
+    }
+    public HeavenlyBody(String name, double orbitalPeriod,BodyTypes bodyTypes) {
         this.name = name;
         this.orbitalPeriod = orbitalPeriod;
         this.satellites = new HashSet<>();
+        this.bodyTypes=bodyTypes;
     }
 
     public String getName() {
@@ -29,7 +37,11 @@ public final class HeavenlyBody {
         return orbitalPeriod;
     }
 
-    public boolean addMoon(HeavenlyBody moon) {
+    public BodyTypes getBodyTypes() {
+        return bodyTypes;
+    }
+
+    public boolean addSatellite(HeavenlyBody moon) {
         return this.satellites.add(moon);
     }
 
@@ -38,22 +50,30 @@ public final class HeavenlyBody {
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        System.out.println("obj.getClass() is : " + obj.getClass());
-        System.out.println("this.getClass() is : " + this.getClass());
-        if (obj == null || (obj.getClass() != this.getClass())) {
-            return false;
+        if (obj instanceof HeavenlyBody) {
+            HeavenlyBody heavenlyBody = (HeavenlyBody) obj;
+            if (this.name.equals(heavenlyBody.getName())) {
+                return this.bodyTypes == heavenlyBody.getBodyTypes();
+            }
         }
-        String objName = ((HeavenlyBody) obj).getName();
-        return this.name.equals(objName);
+        return false;
     }
 
     @Override
-    public int hashCode() {
+    public final int hashCode() {
         System.out.println("Hashcode called");
-        return this.name.hashCode() + 57;
+        return this.name.hashCode() + 57+this.bodyTypes.hashCode();
+    }
+
+    @Override
+    public String  toString() {
+        return
+                name + " , " +
+                        bodyTypes+
+                        " , " + orbitalPeriod ;
     }
 }
