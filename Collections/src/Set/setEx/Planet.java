@@ -13,7 +13,7 @@ public class Planet extends HeavenlyBody {
 
     @Override
     public boolean addSatellite(HeavenlyBody moon) {
-            if(moon.getBodyTypes()==BodyTypes.PLANET){
+            if(moon.getKey().getBodyTypes()==BodyTypes.MOON){
                 return super.addSatellite(moon);
             }else{
                 return false;
