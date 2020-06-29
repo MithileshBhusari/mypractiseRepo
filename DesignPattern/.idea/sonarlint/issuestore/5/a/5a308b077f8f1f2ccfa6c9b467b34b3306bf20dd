@@ -1,0 +1,12 @@
+
+ž
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¬Ù§½8ñÓœ¸ª.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ©¬–
+X	java:S1258"<This block of commented-out lines of code should be removed.(ß£§8µ™¯¸ª.
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ8ßª“¸ª.
+]
+java:S1075F"ARefactor your code to get this URI from a customizable parameter.(Ê„ËR8Î•´¸ª.
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(ƒË¦Šùÿÿÿÿ8Îá‰¸ª.
+£
+java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ëáüÿÿÿÿ8ñÓœ¸ª.

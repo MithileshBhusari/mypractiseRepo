@@ -1,0 +1,15 @@
+
+Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(Ùµßúÿÿÿÿ8©¿æòª.
+E
+java:S1604N"(Make this anonymous inner class a lambda(ÿïŞß8©¿æòª.
+l
+java:S1192H"JDefine a constant instead of duplicating this literal "Mithilesh" 3 times.(‚ùÑÚùÿÿÿÿ8»å×—«.
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(åÜÏÈùÿÿÿÿ8©¿æòª.
+D
+java:S1604C"(Make this anonymous inner class a lambda(£·®8©¿æòª.
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(Íì¬éüÿÿÿÿ8©¿æòª.
+y
+java:S3077@"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(åà£®ùÿÿÿÿ8‡ù¨òª.
+i
+java:S1192I"GDefine a constant instead of duplicating this literal "Nagpur" 3 times.(ÓÃ†Âùÿÿÿÿ8©¿æòª.
+U	java:S106l"9Replace this use of System.out or System.err by a logger.(„íí8©¿æòª.

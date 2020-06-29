@@ -1,0 +1,8 @@
+
+J
+java:S14814"(Remove this unused "car" local variable.(ñæñÊÿÿÿÿÿ8¬•´²«.
+V
+java:S3400-"9Remove this method and declare a constant for this value.(êëáŸ8¸è±²«.
+Y
+java:S18544"7Remove this useless assignment to local variable "car".(ñæñÊÿÿÿÿÿ8¬•´²«.
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(‡ÍËğşÿÿÿÿ8ıµ²«.
