@@ -2,6 +2,7 @@ package sortedcollections;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -14,7 +15,7 @@ public class StockList {
     private final Map<String,StockItem> list;
 
     public StockList(){
-        this.list=new HashMap<>();
+        this.list=new LinkedHashMap<>();
     }
 
     public int addStock(StockItem item){
