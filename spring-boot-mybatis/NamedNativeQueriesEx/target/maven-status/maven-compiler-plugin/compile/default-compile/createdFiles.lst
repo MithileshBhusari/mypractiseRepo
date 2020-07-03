@@ -1,0 +1,3 @@
+com\mtb\namednativequeryex\Application.class
+com\mtb\namednativequeryex\model\User.class
+com\mtb\namednativequeryex\repository\UserRepository.class
