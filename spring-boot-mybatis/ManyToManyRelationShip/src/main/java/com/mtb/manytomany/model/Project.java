@@ -20,7 +20,7 @@ public class Project extends AuditModel {
     @GeneratedValue
     private long projectId;
 
-    @Column(name = "title")
+    @Column(name = "title",unique = true)
     private String title;
 
     @ManyToMany(mappedBy = "projects",cascade = {CascadeType.ALL})

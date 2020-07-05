@@ -3,6 +3,7 @@ package com.mtb.manytomany;
 import com.mtb.manytomany.model.Employee;
 import com.mtb.manytomany.model.Project;
 import com.mtb.manytomany.repository.EmployeeRepository;
+import com.mtb.manytomany.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -25,78 +26,47 @@ public class ManyToManyExApplication implements CommandLineRunner {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @Autowired
+    private ProjectRepository projectRepository;
+
     public static void main(String[] args) {
         SpringApplication.run(ManyToManyExApplication.class, args);
     }
-    @Override
-    public void run(String...args) throws Exception {
 
-        // Create an employee
-        Employee employee = new Employee();
-        employee.setFirstName("Mithilesh");
-        employee.setLastName("Bhusari");
+    @Override
+    public void run(String... args) throws Exception {
 
         /***Initializing hashset using constructors--- START*****/
-        Project[] projectArrayOfMithilesh={new Project("Optus"),
-        new Project("Singtel"),
-        new Project("Telstra"),
-        new Project("TDC NET"),
-        new Project("Virgin Media")};
-
-        Set<Project> projectSetOfMithilesh=new HashSet<>(Arrays.asList(projectArrayOfMithilesh));
-
-        Project[] projectArrayOfMayur={new Project("Optus"),
-        new Project("Singtel"),
-        new Project("NetCracker")};
-        Set<Project> projectSetOfMayur=new HashSet<>(Arrays.asList(projectArrayOfMayur));
-
-
-        Project[] projectArrayOfTarun={new Project("Optus"),
-                new Project("Singtel"),
-                new Project("Barclays")};
-        Set<Project> projectSetOfTarun=new HashSet<>(Arrays.asList(projectArrayOfTarun));
-
-
-        Project[] projectArrayOfAjay={new Project("AT&T"),
-                new Project("Singtel"),
-                new Project("Telstra")};
-        Set<Project> projectSetOfAjay=new HashSet<>(Arrays.asList(projectArrayOfAjay));
-
+        //Project[] projectArray={
+        Project optus = new Project("Optus");
+        Project singtel = new Project("Singtel");
+        Project telstra = new Project("Telstra");
+        Project tdcnet = new Project("TDC NET");
+        Project vm = new Project("Virgin Media");
+        Project nc = new Project("NetCracker");
+        Project barclays = new Project("Barclays");
+        Project att = new Project("AT&T");
+        
         /***Initializing hashset using constructors--- END*****/
+
 
         /***Initializing hashset using collections--- START*****/
 
-        Employee[] employeeArray={new Employee("Mithilesh","Bhusari",projectSetOfMithilesh),
-        new Employee("Mayur","Shetye",projectSetOfMayur),
-        new Employee("Tarun","Rohila",projectSetOfTarun),
-        new Employee("Ajay","Sharma",projectSetOfAjay)};
+        Employee[] employeeArray = {new Employee("Mithilesh", "Bhusari", new HashSet<>(Arrays.asList(singtel, optus, telstra, tdcnet))),
+                new Employee("Mayur", "Shetye", new HashSet<>(Arrays.asList(singtel, optus, nc))),
+                new Employee("Tarun", "Rohila", new HashSet<>(Arrays.asList(singtel, optus, barclays))),
+                new Employee("Ajay", "Sharma", new HashSet<>(Arrays.asList(singtel, telstra, att)))};
 
         //Set Demonstration using Collections.addAll
-        Set<Employee> employeeSet= Collections.<Employee>emptySet();
-        Collections.addAll(employeeSet=new HashSet<Employee>(Arrays.asList(employeeArray)));
+        Set<Employee> employeeSet = Collections.<Employee>emptySet();
+        Collections.addAll(employeeSet = new HashSet<Employee>(Arrays.asList(employeeArray)));
 
         //Set Demonstration using Collections.unmodifiable set
-        Set<Employee> employeeSet1=Collections.<Employee>emptySet();
+        Set<Employee> employeeSet1 = Collections.<Employee>emptySet();
         Collections.unmodifiableSet(new HashSet<Employee>(Arrays.asList(employeeArray)));
 
         /***Initializing hashset with collections--- START*****/
 
-        // Create project1
-        Project project = new Project();
-        project.setTitle("TDC NET");
-
-        // Create project2
-        Project project1 = new Project();
-        project1.setTitle("Telstra");
-
-        // employee can work on two projects,  Add project references in the employee
-        employee.getProjects().add(project);
-        employee.getProjects().add(project1);
-
-        // Add employee reference in the projects
-        project.getEmployees().add(employee);
-        project1.getEmployees().add(employee);
-
-        employeeRepository.save(employee);
+        employeeRepository.saveAll(employeeSet);
     }
 }

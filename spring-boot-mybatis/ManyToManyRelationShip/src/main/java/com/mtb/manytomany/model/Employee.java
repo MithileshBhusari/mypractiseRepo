@@ -1,6 +1,7 @@
 package com.mtb.manytomany.model;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -49,7 +50,6 @@ public class Employee extends AuditModel{
         this.lastName=lastName;
         this.projects=projects;
     }
-
     public Long getEmployeeId() {
         return employeeId;
     }
