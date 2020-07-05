@@ -1,4 +1,4 @@
-package com.mtb.manytomany.model;
+package com.mtb.manytomany.emp_project.model;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -20,7 +20,7 @@ public class Project extends AuditModel {
     @GeneratedValue
     private long projectId;
 
-    @Column(name = "title",unique = true)
+    @Column(name = "title")
     private String title;
 
     @ManyToMany(mappedBy = "projects",cascade = {CascadeType.ALL})

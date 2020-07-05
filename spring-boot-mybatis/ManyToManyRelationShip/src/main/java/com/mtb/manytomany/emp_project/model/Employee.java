@@ -1,7 +1,6 @@
-package com.mtb.manytomany.model;
+package com.mtb.manytomany.emp_project.model;
 
 import javax.persistence.*;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 

@@ -1,4 +1,4 @@
-package com.mtb.manytomany.dialect;
+package com.mtb.manytomany.emp_project.dialect;
 
 import org.hibernate.MappingException;
 import org.hibernate.dialect.identity.IdentityColumnSupportImpl;

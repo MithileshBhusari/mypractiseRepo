@@ -1,9 +1,9 @@
-package com.mtb.manytomany;
+package com.mtb.manytomany.emp_project;
 
-import com.mtb.manytomany.model.Employee;
-import com.mtb.manytomany.model.Project;
-import com.mtb.manytomany.repository.EmployeeRepository;
-import com.mtb.manytomany.repository.ProjectRepository;
+import com.mtb.manytomany.emp_project.model.Employee;
+import com.mtb.manytomany.emp_project.model.Project;
+import com.mtb.manytomany.emp_project.repository.EmployeeRepository;
+import com.mtb.manytomany.emp_project.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -46,7 +46,7 @@ public class ManyToManyExApplication implements CommandLineRunner {
         Project nc = new Project("NetCracker");
         Project barclays = new Project("Barclays");
         Project att = new Project("AT&T");
-        
+
         /***Initializing hashset using constructors--- END*****/
 
 

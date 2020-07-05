@@ -1,6 +1,6 @@
-package com.mtb.manytomany.repository;
+package com.mtb.manytomany.emp_project.repository;
 
-import com.mtb.manytomany.model.Project;
+import com.mtb.manytomany.emp_project.model.Project;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

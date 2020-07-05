@@ -1,4 +1,4 @@
-package com.mtb.manytomany.model;
+package com.mtb.manytomany.emp_project.model;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
