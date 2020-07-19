@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2ee_practise/j2ee_practise.iml" filepath="$PROJECT_DIR$/j2ee_practise/j2ee_practise.iml" />
     </modules>
   </component>
 </project>
