@@ -1,0 +1,16 @@
+
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(‡ÖÂÄşÿÿÿÿ8½£õ¹ª.
+V	java:S106‰"9Replace this use of System.out or System.err by a logger.(öÒ¥´8ÑàŠºª.
+F
+java:S1659i"$Declare "second" on a separate line.(Ìúä±úÿÿÿÿ8²ƒºª.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÉşŒÿÿÿÿÿ8ôûÏ¹ª.
+i
+java:S1128"LRemove this unused import 'org.omg.CosNaming.NamingContextPackage.NotEmpty'.(ò†øÇ8Ãæå¹ª.
+U	java:S106|"9Replace this use of System.out or System.err by a logger.(åéÒ¯8Ÿ†Î¹ª.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²Ôæ˜
+[	java:S106„"9Replace this use of System.out or System.err by a logger.(ÉşŒÿÿÿÿÿ8€‡ô¹ª.
+V	java:S106†"9Replace this use of System.out or System.err by a logger.(‡‘š™8âì†ºª.
+I
+java:S1612d",Replace this lambda with a method reference.(–ñŒü8¹–í¹ª.
+y
+java:S1128"WRemove this unused import 'jdk.internal.org.objectweb.asm.util.TraceAnnotationVisitor'.(­Ü½üøÿÿÿÿ8³¤Ì¹ª.

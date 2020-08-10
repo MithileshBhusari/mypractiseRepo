@@ -1,0 +1,21 @@
+
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8«¥…»ª.
+£
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™ášÿÿÿÿÿ8¿Ì…»ª.
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(˜‰ß‘ıÿÿÿÿ
+N
+java:S1128",Remove this unused import 'javax.print.Doc'.(ö«‘™ıÿÿÿÿ8©ã•»ª.
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¾¾»8¿Ì…»ª.
+£
+java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™ášÿÿÿÿÿ8 ±œ»ª.
+M
+java:S1128"0Remove this unused import 'java.io.PrintStream'.(×ê’8Ìñ™»ª.
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®†ŞK8¿Ì…»ª.
+
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®†ŞK8 ±œ»ª.
+
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®†ŞK8±Šœ»ª.
