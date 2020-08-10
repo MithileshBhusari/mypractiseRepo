@@ -2,8 +2,8 @@ package com.mtb.gitpractise;
 
 /**
  * @author MithileshB
- * @created 10/08/2020 - 8:26 PM
+ * @created 10/08/2020 - 7:14 PM
  * @project DesignPattern
  */
-public class ExClass3 {
+public class ExClass5 {
 }
