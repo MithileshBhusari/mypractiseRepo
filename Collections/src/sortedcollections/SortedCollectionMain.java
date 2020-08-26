@@ -1,5 +1,7 @@
 package sortedcollections;
 
+import java.util.Map;
+
 /**
  * @author MithileshB
  * @created 29/06/2020 - 11:12 AM
@@ -69,8 +71,12 @@ public class SortedCollectionMain {
 //        temp=new StockItem("pen",1.12);
 //        stockList.items().put(temp.getName(),temp);
         stockList.items().get("car").adjustStock(2000);
-        stockList.items().get("car").adjustStock(-1000);
+        stockList.get("car").adjustStock(-1000);
         System.out.println(stockList);
+
+        for(Map.Entry<String,Double> price:stockList.priceList().entrySet()){
+            System.out.println(price.getKey()+" costs "+price.getValue());
+        }
     }
 
     public static int sellItem(Basket basket,String item,int quantity){
