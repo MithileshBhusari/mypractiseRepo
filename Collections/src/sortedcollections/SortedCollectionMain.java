@@ -65,6 +65,12 @@ public class SortedCollectionMain {
         System.out.println(mithileshsBasket);
 
         System.out.println(stockList);
+
+//        temp=new StockItem("pen",1.12);
+//        stockList.items().put(temp.getName(),temp);
+        stockList.items().get("car").adjustStock(2000);
+        stockList.items().get("car").adjustStock(-1000);
+        System.out.println(stockList);
     }
 
     public static int sellItem(Basket basket,String item,int quantity){
@@ -80,4 +86,6 @@ public class SortedCollectionMain {
         }
         return 0;
     }
+
+
 }

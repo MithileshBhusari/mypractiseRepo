@@ -1,9 +1,6 @@
 package sortedcollections;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author MithileshB
@@ -47,6 +44,13 @@ public class StockList {
         return Collections.unmodifiableMap(list);
     }
 
+    public Map<String,Double> priceList(){
+        Map<String,Double> prices=new LinkedHashMap<>();
+        for(Map.Entry<String,StockItem> item:list.entrySet()){
+            prices.put(item.getKey(),item.getValue().getPrice());
+        }
+        return Collections.unmodifiableMap(prices);
+    }
     @Override
     public String toString() {
         String s="\nStockList\n" ;

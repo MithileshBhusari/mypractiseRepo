@@ -1,0 +1,25 @@
+
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(Ù˜ÅÕüÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯ßÑç
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­¤Ñëøÿÿÿÿ
+X
+java:S1854"=Remove this useless assignment to local variable "tempExits".(­¤Ñëøÿÿÿÿ
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(åëú
+t
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢¸˜‡şÿÿÿÿ
+t
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢¸˜‡şÿÿÿÿ
+t
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(¢¸˜‡şÿÿÿÿ
+t
+java:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢¸˜‡şÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ßáì‚üÿÿÿÿ
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(¦Å£Øüÿÿÿÿ
+t
+java:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰Õ–µûÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢¸˜‡şÿÿÿÿ

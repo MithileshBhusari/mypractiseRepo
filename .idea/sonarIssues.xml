@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/commons/src/main/java/com/sigma/ps/tdc/om/commons/http/HttpDeleteWithBody.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/commons/src/main/java/com/sigma/ps/tdc/om/commons/sender/ESBRequestSender.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/ColumbineAdapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/columbine/transformer/ColumbineCreateOrderTransformer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/ComarchNotify-Adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/comarchnotification/utils/ComarchNotifyUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/VlanmanAdapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/vlanman/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/VlanmanAdapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/vlanman/VlanmanOutbound.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/VlanmanAdapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/vlanman/info/GetVlanInfoOutbound.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/adman-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/adman/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/adman-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/adman/provision/ProvisionTransformer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/mobile-smp-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/mobileprovisioning/transformer/AddServiceRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/mobile-smp-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/mobileprovisioning/transformer/ProvisioningRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/provisioning-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/provisioning/outbound/QueryResponseProcessor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/provisioning-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/provisioning/transformer/ProvisioningRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/provisioning-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/provisioning/transformer/QueryPortfolioRequest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/rals-adapter/src/main/java/com/sigma/ps/tdc/om/soi/adapters/rals/resourceallocation/RalsFiberOrderAllocTransformer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/soi-adapters/timer-event-adapter/src/main/java/com/sigma/ps/tdc/om/timer/event/adapter/Outbound.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/TDC/5.2 git clone code/tdc-om-src/src/main/resources/tdc/adman/mapping.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/sonarIssues.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Adventure/Location.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Adventure/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Map/Adventure/Location.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Map/Adventure/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Map/practise/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/Challenge.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/Dog.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/DogMain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/HeavenlyBody.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/Labrador.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/SetMain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/Set/setEx/SymmetricEx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/com/mtb/practise/MapEx.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/map/Adventure/Location.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/map/Adventure/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Collections/src/map/practise/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

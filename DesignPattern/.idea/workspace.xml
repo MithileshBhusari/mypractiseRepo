@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1ef5d52-a3fb-49c8-a705-08b76bfd8a87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/j2ee_practise/src/main/java/mtb/decorator/LogMessageJSONFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j2ee_practise/src/main/java/mtb/decorator/thirdpartylogger/LogMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j2ee_practise/j2ee_practise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/j2ee_practise/j2ee_practise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j2ee_practise/src/main/java/mtb/observerex/readlearncode/CustomerEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/j2ee_practise/src/main/java/mtb/observerex/readlearncode/CustomerEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j2ee_practise/src/main/java/mtb/observerex/readlearncode/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/j2ee_practise/src/main/java/mtb/observerex/readlearncode/services/CustomerService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ex51VhBMblMvwSB5nwl5YAzk9M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1ef5d52-a3fb-49c8-a705-08b76bfd8a87" name="Default Changelist" comment="" />
+      <created>1595250803669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595250803669</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="3" key="#Project_Structure" timestamp="1595180373078">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="3" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1595180373078" />
+    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1595230616490">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1595230616490" />
+  </component>
+</project>

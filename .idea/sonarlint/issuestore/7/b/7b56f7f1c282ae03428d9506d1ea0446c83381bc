@@ -1,0 +1,28 @@
+
+N	java:S106f"9Replace this use of System.out or System.err by a logger.(Àó”ƒ
+U	java:S106x"9Replace this use of System.out or System.err by a logger.(áÁé€8¹’ï—©.
+c
+java:S1192R"FDefine a constant instead of duplicating this literal "Pluto" 4 times.(ß°ü·8¹’ï—©.
+Z	java:S106^"9Replace this use of System.out or System.err by a logger.(ìƒşùÿÿÿÿ8¹’ï—©.
+Z	java:S106y"9Replace this use of System.out or System.err by a logger.(ºóÁÁÿÿÿÿÿ8¹’ï—©.
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(ˆ«»Ãıÿÿÿÿ
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(²şÓ8¹’ï—©.
+T	java:S106}"9Replace this use of System.out or System.err by a logger.(’¨š8¹’ï—©.
+l
+java:S1128"JRemove this unused import 'com.sun.xml.internal.ws.api.client.WSPortInfo'.(“ü²ıÿÿÿÿ8¹’ï—©.
+U	java:S106h"9Replace this use of System.out or System.err by a logger.(ø“’Â8¹’ï—©.
+Z	java:S106w"9Replace this use of System.out or System.err by a logger.(•ñ›Ğøÿÿÿÿ8¹’ï—©.
+Z	java:S106p"9Replace this use of System.out or System.err by a logger.(ïÅ›¥øÿÿÿÿ8¹’ï—©.
+U	java:S106v"9Replace this use of System.out or System.err by a logger.(²æ‰Ü8¹’ï—©.
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ĞåÀÁøÿÿÿÿ8¹’ï—©.
+b
+java:S1192"FDefine a constant instead of duplicating this literal "Earth" 3 times.(ß°ş8¹’ï—©.
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(Íê›‡üÿÿÿÿ
+[	java:S106€"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¹’ï—©.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(¼´ğÔøÿÿÿÿ8¹’ï—©.
+X	java:S125q"<This block of commented-out lines of code should be removed.(Èõö‘8¹’ï—©.
+W
+java:S1191"5Use classes from the Java API instead of Sun classes.(“ü²ıÿÿÿÿ8¹’ï—©.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ää¨ù
+U	java:S106X"9Replace this use of System.out or System.err by a logger.(ÏŠÍ¡8¹’ï—©.
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(¥ÌŠ
