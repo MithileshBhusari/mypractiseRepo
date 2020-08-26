@@ -1,10 +1,11 @@
 package mtb.observerex.readlearncode.services;
 
-import com.mtb.observerex.readlearncode.Customer;
-import com.mtb.observerex.readlearncode.CustomerEvent;
+import mtb.observerex.readlearncode.Customer;
+import mtb.observerex.readlearncode.CustomerEvent;
+
 
 import javax.annotation.Priority;
-import javax.enterprise.event.Observes;
+import javax.enterprise.event.ObservesAsync;
 
 /**
  * @author MithileshB
@@ -13,11 +14,11 @@ import javax.enterprise.event.Observes;
  */
 public class CustomerService {
 
-    public void createCustomer(@Observes @Priority(100) @CustomerEvent(CustomerEvent.Type.ADD) Customer customer){
+    public void createCustomer(@ObservesAsync @Priority(100) @CustomerEvent(CustomerEvent.Type.ADD) Customer customer){
         //add new customer
     }
 
-    public void deleteCustomer(@Observes @CustomerEvent(CustomerEvent.Type.REMOVE) Customer customer){
+    public void deleteCustomer(@ObservesAsync @CustomerEvent(CustomerEvent.Type.REMOVE) Customer customer){
         //delete the customer
     }
 }
