@@ -28,6 +28,20 @@ public class Basket {
         System.out.println("returing 0");
         return 0;
     }
+    public int removeFromBasket(StockItem item,int quantity){
+        if ((item != null) && (quantity > 0)) {
+            int inBasket=list.getOrDefault(item,0);
+            System.out.println();
+            int newQuatity=inBasket+quantity;
+            if(newQuatity>0){
+                list.put(item,newQuatity);
+            }else if(newQuatity==0){
+                list.remove(item);
+                return quantity;
+            }
+        }
+        return 0;
+    }
 
     public Map<StockItem, Integer> items() {
         return Collections.unmodifiableMap(list);

@@ -25,3 +25,11 @@ U
 %Collections/src/Set/setEx/Planet.java,9\4\9469aa8b2e02aa090971c223fe94670fa123fa65
 S
 #Collections/src/Set/setEx/Moon.java,c\6\c69f026ff90109d3fd966f64d8d131883d40ae58
+`
+0Collections/src/sortedcollections/StockItem.java,e\3\e3e3af6efcfb1faf1232c21d052738d15fcde702
+`
+0Collections/src/sortedcollections/StockList.java,f\9\f9a0ae671a99ded4fac80ce6a519e6badc374614
+K
+Collections/Collections.iml,e\8\e81c1363b34763b1e0ebd4045eca83a7c139be2b
+k
+;Collections/src/sortedcollections/SortedCollectionMain.java,0\7\07319b645f6c3aa161ea9358ba1ecaaf6bf17355

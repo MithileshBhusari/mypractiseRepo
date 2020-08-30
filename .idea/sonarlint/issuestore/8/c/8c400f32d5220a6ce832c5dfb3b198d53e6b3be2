@@ -1,6 +1,6 @@
 
-Q	java:S125$"<This block of commented-out lines of code should be removed.(İ ’ì
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ää¨ù
-Q	java:S125"<This block of commented-out lines of code should be removed.(èØ£
 k
 java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(İ¢êÍıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ää¨ù
+Q	java:S125$"<This block of commented-out lines of code should be removed.(İ ’ì
+Q	java:S125"<This block of commented-out lines of code should be removed.(èØ£
