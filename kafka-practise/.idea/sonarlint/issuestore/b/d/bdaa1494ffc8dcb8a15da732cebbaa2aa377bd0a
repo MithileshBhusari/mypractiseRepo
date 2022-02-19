@@ -1,0 +1,30 @@
+
+R
+java:S2629Q"7Use the built-in formatting to construct this argument.(ãÓ¥Òúÿÿÿÿ
+>
+java:S1148i"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+>
+java:S1148t"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+C
+java:S1604)"(Make this anonymous inner class a lambda(œõ ìüÿÿÿÿ
+y
+java:S1488/"^Immediately return this expression instead of assigning it to the temporary variable "client".(³Ò”Øúÿÿÿÿ
+o
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(ûåžâ
+[
+java:S1854m"ERemove this useless assignment to local variable "bulkItemResponses".(Œÿ¿á
+\
+java:S3457Q"AFormat specifiers should be used instead of string concatenation.(ãÓ¥Òúÿÿÿÿ
+J
+java:S1874]"4Remove this use of "IndexRequest"; it is deprecated.(ðÈÎÍ
+\
+java:S3457b"AFormat specifiers should be used instead of string concatenation.(¸‚·£üÿÿÿÿ
+\
+java:S2142h"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+\
+java:S2142s"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+L
+java:S1481m"6Remove this unused "bulkItemResponses" local variable.(Œÿ¿á
+V	java:S125X"<This block of commented-out lines of code should be removed.(Î‚ýÙÿÿÿÿÿ
+V	java:S125d"<This block of commented-out lines of code should be removed.(Í°¥Éþÿÿÿÿ
+V	java:S125y"<This block of commented-out lines of code should be removed.(¤ÖÁ¯ûÿÿÿÿ

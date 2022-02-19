@@ -1,0 +1,16 @@
+
+`
+java:S2095"KUse try-with-resources or close this "KafkaProducer" in a "finally" clause.(Ýî¥J
+M
+java:S2629""7Use the built-in formatting to construct this argument.(Ì©Œ·
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„©”Ã
+>
+java:S1604'"(Make this anonymous inner class a lambda( ­Ç÷
+n
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ýî¥J
+o
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(®Á¸»
+W
+java:S3457""AFormat specifiers should be used instead of string concatenation.(Ì©Œ·
+W
+java:S3457,"AFormat specifiers should be used instead of string concatenation.(ù°ÒŠ
