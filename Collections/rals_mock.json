@@ -1,0 +1,44 @@
+{
+	"adapter": {
+		"adapterName": "RalsAdapterMock",
+		"components": {
+			"inBoundEndPoints": [{
+				"name": "clipInputProcessor",
+				"uri": "class:com.sigma.om.soi.adapter.ClipInputMessageProcessor"
+			}],
+			"transformers": [{
+					"name": "RalsFiberOrderAllocTransformer",
+					"uri": "class:com.sigma.ps.tdc.om.soi.adapters.rals.resourceallocation.RalsFiberOrderAllocTransformer"
+				}
+			],
+			"outBoundEndPoints": [{
+					"name": "RalsFiberOrderAllocOutbound",
+					"protocol": {
+						"uri": "class:com.sigma.ps.tdc.om.commons.sender.ESBRequestSender"
+					},
+					"syncReplyProcessor": {
+						"uri": "class:com.sigma.ps.tdc.om.soi.adapters.rals.resourceallocation.RalsFiberOrderAllocOutbound"
+					},
+					"stub": "stubMode",
+					"stubClass": "class:com.sigma.ps.tdc.om.commons.simulator.ResponseSimulator"
+				}
+			]
+		},
+
+		"defaultFlow": {
+			"inBoundEndPoint": {
+				"lRefName": "clipInputProcessor"
+			},
+			"transformer": {
+				"DEFAULT": {
+					"lRefName": "RalsFiberOrderAllocTransformer"
+				}
+			},
+			"outBoundEndPoint": {
+				"DEFAULT": {
+					"lRefName": "RalsFiberOrderAllocOutbound"
+				}
+			}
+		}
+	}
+}
