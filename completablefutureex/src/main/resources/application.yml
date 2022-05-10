@@ -2,7 +2,7 @@ spring:
   h2.console.enabled: true
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:file:C:\Users\hp\Downloads\completablefutureex\src\main\resources\asyncfuturetest.db
+    url: jdbc:h2:file:F:\completableFutureFromGit\mypractiseRepo\completablefutureex\src\main\resources\asyncfuturetest.db
     username: sa
     password: password
   jpa:
@@ -17,5 +17,5 @@ spring:
       enabled: false
 
 server:
-  port: 9191
+  port: 9292
 

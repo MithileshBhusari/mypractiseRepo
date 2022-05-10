@@ -41,7 +41,10 @@ public class EmployeeController {
         return employeeService.getEmployees();
     }
 
-
+    @PostMapping("/sendTrainingReminder")
+    private void sendReminder(){
+        employeeService.sendReminder();
+    }
 
 
 
